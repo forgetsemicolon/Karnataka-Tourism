@@ -1,0 +1,115 @@
+ /*{
+                $bangaloreQuery = "SELECT * FROM accomodation WHERE cid = 1";
+                $result=$db->query($bangaloreQuery);
+               if ($result->num_rows>0) {
+                   while($row=$result->fetch_assoc()){
+                       echo "<br> hid: " . $row["hid"]. " - Location: " . $row["location"]. " " . "<br>" ;
+                   }
+               }*/
+               /* $result = mysqli_query($db,$bangaloreQuery); */
+               /* $entry = mysqli_fetch_assoc($result); 
+                $locations = $entry['location'];
+                echo $locations;  */
+              /* echo $result; */
+            
+           
+
+
+
+
+
+{
+
+
+
+
+
+
+
+
+<?php
+        mysql_connect("localhost","root","root123") or die ("could not connect");
+        mysql_select_db("pratibha") or die ("dbase not found");
+        $output = '';
+        if(isset($_POST['bangalore']))
+        {
+	       $searchq = $_POST['bangalore'];
+	       $searchqq = $_POST['search2'];
+	
+	       $query = mysql_query("SELECT * FROM accomodation WHERE cid=1");
+	       $count = mysql_num_rows($query);
+	       if(count !== 0)
+		  {
+		      while($row = mysql_fetch_array($query)){
+			 $city_id = $row['cid'];
+			 $hotel_id = $row['hid'];
+			 $name=$row['hname'];
+			 $location=$row['location'];
+			 $in=$row['check_in'];
+			 $out=$row['check_out'];
+             $fare=$row['fare'];
+			
+			$output .= '<div ><table border="3"  class="table" style="width:5px;"" ><tr><td>'.$name.'</td> <td>'.$in.' </td><td>'.$fare.'</td></tr></table></div>';
+		}
+	}
+	 else if(count ==0){
+		$output = 'There was no search result!';
+	}
+}
+?>
+
+
+
+
+
+
+
+
+<?php
+        
+           function showBangalore()
+           {    $db = mysqli_connect("localhost","root","root123","pratibha");
+               $bangaloreQuery = "SELECT * FROM accomodation WHERE cid = 1";
+               $response=mysqli_query($db,$bangaloreQuery);
+               while ($row = mysqli_fetch_assoc($response))
+    {
+            printf ("%s  %s %s \n", $row["hname"], $row["location"], $row["fare"]);
+            printf("\n"); 
+    }
+           }
+          
+    
+    ?>
+
+
+
+
+function showBangalore()
+{
+<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>location</th>
+            <th>fare</th>
+            <th>check_in</th>
+            <th>check_out</th>
+        </tr>
+    </thead>
+    <?php
+     $db = mysqli_connect("localhost","root","root123","pratibha");
+               $bangaloreQuery = "SELECT * FROM accomodation WHERE cid = 1";
+               $response=mysqli_query($db,$bangaloreQuery);
+    ?>
+    <tbody>
+      <?php while ($row = mysqli_fetch_array($response)) { ?>
+          <tr>
+            <td><?php echo $row["hname"]; ?></td>
+            <td><?php echo $row["location"]; ?></td>
+            <td><?php echo $row["fare"]; ?></td>
+            <td><?php echo $row["check_in"]; ?></td>
+            <td><?php echo $row["check_out"]; ?></td>
+          </tr>
+      <?php } ?>
+    </tbody>
+    }

@@ -1,0 +1,73 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Palatino','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------------------- */
+/* RESUSABLE COMPONENTS */
+/* --------------------------------------------- */
+
+row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* -------HEADINGS---------- */
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.Bangalore-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(blr.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.Belgaum-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(belgaum.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.Bellary-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(bellary.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.Hubli-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(hubli.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.Mangalore-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(mlr.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.Mysore-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(mysore.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}

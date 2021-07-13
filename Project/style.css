@@ -1,0 +1,240 @@
+/*
+Orange color:  #f1c40f
+*/
+
+
+/* --------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #726d6d;
+    font-family: 'Lat0','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------------------- */
+/* RESUSABLE COMPONENTS */
+/* --------------------------------------------- */
+
+row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* -------HEADINGS---------- */
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/* -----------BUTTONS---------- */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #f1c40f;
+    border: 1px solid #f1c40f;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #f1c40f;
+    color: #f1c40f;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #c29d0b;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #c29d0b;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #c29d0b;
+    color: #fff;
+}
+
+/* --------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------- */
+
+header {
+    margin : 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(header.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment : fixed;
+    height: 100vh;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px; 
+}
+
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid  transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid  #f1c40f;
+}
+
+
+/* --------------------------------------------- */
+/* FEATURES */
+/* --------------------------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+.feature-heading {
+    text-decoration: underline;
+    text-decoration-color: #f1c40f;
+    text-decoration-line: 5px;
+    padding: 1px 3px;
+    
+}
+
+.feature-heading:after
+{
+    display : block;
+    content : " ";
+    height : 2px;
+    width : 100px;
+    margin: 30 auto;
+    border-bottom: 2px solid  #f1c40f;
+}
+
+/* --------------------------------------------- */
+/* PLACES */
+/* --------------------------------------------- */
+
+.section-places {
+    padding: 0;
+}
+
+.places-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.places-showcase li {
+    display: block;
+    float: left;
+    width: 25%; 
+}
+
+.place-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.place-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.place-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    
+}
+
+
+/* --------------------------------------------- */
+/* CITIES */
+/* --------------------------------------------- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+.section-cities {
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+.cities-section {
+    text-decoration: underline;
+    text-decoration-color: #f1c40f;
+    text-decoration-line: 5px;
+    padding: 1px 3px;
+    /* border-bottom: 2px solid  #f1c40f; */
+}

@@ -1,0 +1,36 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #726d6d;
+    font-family: 'Lat0','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------------------- */
+/* RESUSABLE COMPONENTS */
+/* --------------------------------------------- */
+
+row {
+    max-width: 1140px;
+    margin: 0;
+}
+
+
+
+.accomodation-section {
+    font-size: 30px;
+    color: #fff;
+    align-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(accomodation.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+
+}

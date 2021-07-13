@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styletransport.css">
+        <title>Transport</title>
+    </head>
+    <body>
+        <div class="transport-section">
+        <h1><center>Transport</center></h1>
+        </div>
+    <div>
+  <form action="/action_page.php">
+    <label for="src">From</label>
+    <input type="text" id="src" name="source" placeholder="Your source city">
+
+    <label for="dest">To</label>
+    <input type="text" id="dest" name="destination" placeholder="Your destination city">
+
+    <label for="Day">Day</label>
+    <select id="Day" name="Day">
+      <option value="today">Today</option>
+      <option value="tomorrow">Tomorrow</option>
+      <option value="dayafter">Day after tomorrow</option>
+    </select><br>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    </body>
+</html>
+<?php
+$source = $_POST['source'];
+
+?>
